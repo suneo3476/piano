@@ -1,7 +1,6 @@
 require 'rubygems'
 require 'sinatra'
 require 'dm-core'
-require 'dm-migrations'
 
 if development?
 	require 'sinatra/reloader'

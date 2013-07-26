@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'dm-core'
+require 'dm-migrations'
 require 'dm-timestamps'
 class Entries
 	include DataMapper::Resource
@@ -7,5 +8,5 @@ class Entries
 	property :url, String
 	property :created_at, DateTime
 	property :updated_at, DateTime
-	DataMapper.auto_upgrade!
+	auto_upgrade!
 end
